@@ -1,0 +1,26 @@
+ALGORITHM checkpoint
+var 
+length, words, vow:INTEGER:=0
+c:char:=''
+    
+begin 
+write('please enter your sentence ')
+read(str)
+
+while (c<>'.')do(
+    read(c)
+    length:=length+1
+    
+    
+if (c=' ')then
+   words=words+1
+)
+end if 
+if (c='a' OR c='e' OR c='i' OR c='o' OR c='U' OR c='y') then
+vow=vow+1
+end if 
+end while
+write('words=',words)
+write('length=',length)
+write('vowels=',vow)
+end 
